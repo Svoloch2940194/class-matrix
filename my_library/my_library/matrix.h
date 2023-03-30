@@ -34,50 +34,49 @@ class matrix
 	ve<ve<type>> ma;
 public:
 
-	matrix(ll n1, ll m1)
+	matrix(ll n1 = 0, ll m1 = 0)
 	{
 		n = n1;
 		m = m1;
 		ma.resize(n, ve<type>(m, 0));
 	}
 
-	void print()
+	ll size_string() { re n; }
+	ll size_column() { re m; }
+
+	void resize(ll n1, ll m1)
 	{
-
-		ll n = ma.size();
-		ll m = ma[0].size();
-
-		fr(i, 0, n)
-		{
-			fr(j, 0, m) cout << ma[i][j] << " ";
-			cout << endl;
-		}
+		n = n1;
+		m = m1;
+		ma.resize(n, ve<type>(m, 0));
 	}
 
 	matrix operator+ (matrix a)
 	{
+		matrix<type> ans;
 		if (n == a.n && m == a.m)
 		{
-			matrix<type> ans(n, m);
+			ans.resize(n, m);
 			fr(i, 0, n)
 				fr(j, 0, m)
 				ans.ma[i][j] = ma[i][j] + a.ma[i][j];
 			re ans;
 		}
-		else { cout << "You can`t do this" << endl; re; }
+		else { std::runtime_error("BAG"); re ans; }
 	}
 
 	matrix operator- (matrix a)
 	{
+		matrix<type> ans;
 		if (this->n == a.n && this->m == a.m)
 		{
-			matrix<type> ans(n, m);
+			ans.resize(n, m);
 			fr(i, 0, n)
 				fr(j, 0, m)
 				ans.ma[i][j] = ma[i][j] - a.ma[i][j];
 			re ans;
 		}
-		else { cout << "You can`t do this" << endl; re; }
+		else { std::runtime_error("BAG"); re; }
 	}
 
 	matrix operator* (ll b)
@@ -91,9 +90,10 @@ public:
 
 	matrix operator*(matrix a)
 	{
-		if (this->m == a.n)
+		matrix<type> ans;
+		if (m == a.n)
 		{
-			matrix<type> ans(n, a.m);
+			ans.resize(n, a.m);
 			fr(i, 0, n)
 			{
 				fr(j, 0, a.m)
@@ -106,7 +106,7 @@ public:
 			}
 			re ans;
 		}
-		else { cout << "You can`t do this" << endl; re; }
+		else { runtime_error("BAG"); re ans; }
 	}
 
 	matrix operator+= (matrix a)
@@ -118,7 +118,7 @@ public:
 					ma[i][j] += a.ma[i][j];
 			re* this;
 		}
-		else { cout << "You can`t do this" << endl; re; }
+		else { std::runtime_error("BAG"); re; }
 	}
 
 	matrix operator-= (matrix a)
@@ -131,7 +131,7 @@ public:
 				ma[i][j] -= a.ma[i][j];
 			re* this;
 		}
-		else { cout << "You can`t do this" << endl; re; }
+		else { std::runtime_error("BAG"); re; }
 	}
 
 	matrix operator*= (ll b)
@@ -175,3 +175,12 @@ istream& operator>> (istream& cin, ve<type>& a)
 	}
 }
 
+template <typename type>
+
+istream& operator<< (istream& cout, ve<type> a)
+{
+	fr(i, 0, a.size())
+	{
+		cout << a[i];
+	}
+}

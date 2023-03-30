@@ -1,5 +1,7 @@
 ﻿  main.cpp
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(12,27): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(12,41): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(15,43): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(28,42): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
 C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(155,9): warning C4244: 'argument': conversion from 'const ll' to 'const unsigned int', possible loss of data
 C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(154): message : while compiling class template member function 'std::vector<type,std::allocator<type>> &matrix<type>::operator [](const ll)'
           with
@@ -11,15 +13,21 @@ C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(12): mes
           [
               type=ll
           ]
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(7): message : see reference to class template instantiation 'matrix<ll>' being compiled
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(52,27): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(45): message : while compiling class template member function 'void matrix<ll>::print(void)'
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(13): message : see reference to function template instantiation 'void matrix<ll>::print(void)' being compiled
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(52,30): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(8): message : see reference to class template instantiation 'matrix<ll>' being compiled
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(103,15): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(92): message : while compiling class template member function 'matrix<ll> matrix<ll>::operator *(matrix<ll>)'
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(18): message : see reference to function template instantiation 'matrix<ll> matrix<ll>::operator *(matrix<ll>)' being compiled
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(103,18): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(103,28): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(103,31): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(104,13): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(104,16): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
 C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(41,25): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
 C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(37): message : while compiling class template member function 'matrix<ll>::matrix(ll,ll)'
-C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(7): message : see reference to function template instantiation 'matrix<ll>::matrix(ll,ll)' being compiled
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\main.cpp(8): message : see reference to function template instantiation 'matrix<ll>::matrix(ll,ll)' being compiled
 C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(41,13): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
-  matrix.cpp
-  Generating Code...
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(51,25): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(48): message : while compiling class template member function 'void matrix<ll>::resize(ll,ll)'
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(96): message : see reference to function template instantiation 'void matrix<ll>::resize(ll,ll)' being compiled
+C:\Users\Volochaeva Natalia\source\repos\my_library\my_library\matrix.h(51,13): warning C4244: 'argument': conversion from 'll' to 'const unsigned int', possible loss of data
   my_library.vcxproj -> C:\Users\Volochaeva Natalia\source\repos\my_library\Debug\my_library.exe
